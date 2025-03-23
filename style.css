@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.tatay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(207, 207, 207);
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 30%;
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.logo {
+  height: 100%;
+  width: 300px;
+  background-image: url(logo.jpeg);
+  border-radius: 500px;
+  background-size: 350px;
+  background-position: center;
+}
+
+.nav {
+  height: 10%;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+}
+.box1 {
+  height: 500px;
+  width: 1000px;
+  background-color: ;
+  margin-right: 200px;
+}
+
+.slider {
+  height: 500px;
+  width: 500px;
+  border-radius: 50px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.slider {
+  position: relative;
+  width: 600px; /* Set the width of the slider */
+  overflow: hidden;
+  margin: auto;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%; /* Each slide takes up 100% of the slider width */
+}
+
+img {
+  width: 100%; /* Images are responsive */
+  height: auto;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
